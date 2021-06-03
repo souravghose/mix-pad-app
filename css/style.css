@@ -1,0 +1,190 @@
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    body {
+        background: black;
+        overflow-x: hidden;
+    }
+
+    nav {
+        margin-bottom: 120px;
+    }
+
+    .main-content {
+        padding-left: 10px;
+        padding-right: 10px;
+        background: black;
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+
+    .pad {
+        margin-top: 10px;
+        /* margin-left: 2px; */
+        background: linear-gradient(180deg, #e4528a, #ff6191);
+        padding: 40px;
+        border-radius: 6px;
+        cursor: pointer;
+    }
+
+    .pad-active {
+        margin-top: 10px;
+        margin-left: 2px;
+        background: radial-gradient(circle, #48e621, #16cf92);
+        padding: 40px;
+        border-radius: 6px;
+        cursor: pointer;
+    }
+
+    .pad:hover {
+        background: rgb(243, 98, 122);
+    }
+
+    #footer {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: #212529 !important;
+        padding: 10px;
+    }
+
+    p {
+        color: white;
+        margin-top: 20px;
+        font-size: 20px;
+    }
+
+    @media (max-width:576px) {
+        nav {
+            margin-bottom: 20px;
+        }
+
+        .ball {
+            display: none;
+        }
+
+        .ball2 {
+            display: none;
+        }
+
+        .ball3 {
+            display: none;
+        }
+
+        .ball4 {
+            display: none;
+        }
+    }
+
+    /* //animation */
+
+    .ball {
+        background: rgb(115, 115, 224);
+        border-radius: 50%;
+        position: fixed;
+        width: 50px;
+        height: 50px;
+        bottom: 10%;
+        animation-name: bounce;
+        animation-duration: 2s;
+        animation-iteration-count: infinite;
+        animation-timing-function: cubic-bezier(.06, 1.06, .87, .24);
+    }
+
+    .ball2 {
+        background: rgb(250, 100, 145);
+        border-radius: 50%;
+        position: fixed;
+        width: 50px;
+        height: 50px;
+        bottom: 10%;
+        animation-name: bounce2;
+        animation-duration: 1s;
+        animation-iteration-count: infinite;
+        animation-timing-function: cubic-bezier(.19, .89, .63, .2);
+    }
+
+    .ball3 {
+        background: rgb(7, 200, 120);
+        border-radius: 50%;
+        position: fixed;
+        width: 50px;
+        height: 50px;
+        bottom: 10%;
+        animation-name: bounce3;
+        animation-duration: 2s;
+        animation-iteration-count: infinite;
+        animation-timing-function: cubic-bezier(.19, .89, .63, .2);
+    }
+
+    .ball4 {
+        background: rgb(219, 38, 31);
+        border-radius: 50%;
+        position: fixed;
+        width: 50px;
+        height: 50px;
+        bottom: 10%;
+        animation-name: bounce4;
+        animation-duration: 1s;
+        animation-iteration-count: infinite;
+        animation-timing-function: cubic-bezier(.19, .89, .63, .2);
+    }
+
+    @keyframes bounce {
+        0% {
+            left: 0%;
+        }
+
+        5% {
+            bottom: 20%;
+        }
+
+        100% {
+            left: 100%;
+        }
+    }
+
+    @keyframes bounce2 {
+        0% {
+            left: 0%;
+        }
+
+        5% {
+            bottom: 40%;
+        }
+
+        100% {
+            left: 100%;
+        }
+    }
+
+    @keyframes bounce3 {
+        0% {
+            left: 10%;
+        }
+
+        5% {
+            bottom: 30%;
+        }
+
+        100% {
+            left: 100%;
+        }
+    }
+
+    @keyframes bounce4 {
+        0% {
+            left: 5%;
+        }
+
+        5% {
+            bottom: 20%;
+        }
+
+        100% {
+            left: 100%;
+        }
+    }
