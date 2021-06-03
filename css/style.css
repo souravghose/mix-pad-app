@@ -81,8 +81,8 @@
         .ball4 {
             display: none;
         }
-       .fixed-bottom{
-           
+       #footer{
+          margin-top: 100px;
        }
 
     /* //animation */
