@@ -50,6 +50,7 @@
         align-items: center;
         background-color: #212529 !important;
         padding: 10px;
+        position: fixed;
     }
 
     p {
