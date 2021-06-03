@@ -81,7 +81,9 @@
         .ball4 {
             display: none;
         }
-    }
+       .fixed-bottom{
+             position: relative;
+       }
 
     /* //animation */
 
